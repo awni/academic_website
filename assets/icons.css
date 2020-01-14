@@ -1,0 +1,18 @@
+
+.svg-icon{
+  width:40px;
+  height:40px;
+  display:inline-block;
+}
+
+.svg-icon.github {
+  background-image: url(github.svg);
+}
+
+.svg-icon.twitter {
+  background-image: url(twitter.svg);
+}
+
+.svg-icon.scholar {
+  background-image: url(googlescholar.svg);
+}
