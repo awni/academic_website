@@ -10,81 +10,72 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="assets/icons.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 
     <title>Awni Hannun</title>
-    <style>
-      #infolist {}
-      #infolist ul {list-style: none; padding: 0; margin: 0;}
-      #infolist ul li {list-style: none; padding-top: 10px;} 
-    </style>
   </head>
 
   <body>
     <div class="container mt-5">
       <div class="row">
         <div class="col">
-          <h2><a class="nav-link">Awni Hannun</a></h2>
+          <h2>Awni Hannun</a></h2>
           <hr>
         </div>
       </div>
       <div class="row mt-5">
         <div class="col-md-2">
-          <ul class="nav flex-column" id="js-navigation">
-            <li class="nav-item">
-              <a class="nav-link active" href="./home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./research.html">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./publications.html">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./software.html">Software</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./misc.html">Misc</a>
-            </li>
-          </ul>
+          <nav class="nav flex-column nav-pills">
+            <a class="nav-item nav-link active" href="./index.html">Home</a>
+            <a class="nav-item nav-link" href="./research.html">Research</a>
+            <a class="nav-item nav-link" href="./publications.html">Publications</a>
+            <a class="nav-item nav-link" href="./software.html">Software</a>
+            <a class="nav-item nav-link" href="./misc.html">Misc</a>
+          </nav>
         </div>
+
         <div class="col-md-8">
-          <main class="border border-dark" style="padding:10px">
-          <div id="js-content">
-          </div>
+          <main class="shadow p-3 mb-5 bg-white rounded" style="padding:10px">
+            <div id="infolist">
+              <ul>
+                <li>
+                  <strong>Bio:</strong> I am currently a Research Scientist at 
+                  <a href="https://research.fb.com/category/facebook-ai-research/">Facebook AI Research</a>.
+                  Before that I spent two years as a Research Scientist in Baidu's
+                  <a href="https://svail.github.io/">Silicon Valley AI Lab</a>
+                  where I lead the Deep Speech projects.
+                  I also completed my PhD in computer science at
+                  Stanford University working with 
+                  <a href="http://www.andrewng.org/">Andrew Ng</a>.
+                </li>
+                <li>
+                  <strong>Research:</strong> I research machine learning algorithms and applications.
+                </li>
+                <li>
+                  <strong>Blog:</strong> I made a <a href="https://awni.github.io/">blog</a> which I contribute to infrequently.
+                </li>
+                <li>
+                  <strong>Email:</strong>
+                  <span style="font-family:monospace;">awni@cs.stanford.edu</span>
+                </li>
+                
+                <li>
+                  <a style="text-decoration:none;" href="https://github.com/awni">
+                    <i class="svg-icon github"></i>
+                  </a>
+                  <a style="text-decoration:none;" href="https://twitter.com/awnihannun">
+                    <i class="svg-icon twitter"></i>
+                  </a>
+                  <a style="text-decoration:none;" href="https://scholar.google.com/citations?hl=en&user=3-mdTUAAAAAJ">
+                    <i class="svg-icon scholar"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </main>
         </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function() {
-        $('#js-content').load('/home.html');
-
-        $('#js-navigation li a').click(function(e) {
-          var link = e.target.href;
-          e.preventDefault();
-          $("#js-content").load(link);
-          // Properly display the url and 
-          // keep track of history for the "back" button.
-          history.pushState(null, null, link.split('.html')[0]);
-        })
-      });
-
-      // Pop the last url in the history so the "back" button works.
-      window.onpopstate = function(e) {
-        var link = document.location.href;
-        if (link[link.length-1] != '/') {
-           link += ".html";
-        }
-        $("#js-content").load(link);
-      };
-
-    </script>
   </body>
 </html>

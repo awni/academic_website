@@ -1,0 +1,44 @@
+body {
+    font-size: 14px;
+}
+
+#infolist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#infolist ul li {
+  list-style: none;
+  padding-top: 10px;
+} 
+
+#papers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#papers ul li {
+  list-style: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+} 
+
+.svg-icon{
+  width:40px;
+  height:40px;
+  display:inline-block;
+}
+
+.svg-icon.github {
+  background-image: url(github.svg);
+}
+
+.svg-icon.twitter {
+  background-image: url(twitter.svg);
+}
+
+.svg-icon.scholar {
+  background-image: url(googlescholar.svg);
+}
