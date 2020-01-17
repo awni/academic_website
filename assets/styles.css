@@ -9,9 +9,12 @@ body {
 }
 
 #infolist ul li {
-  list-style: none;
   padding-top: 10px;
 } 
+
+.software li {
+    padding-bottom: 8px;
+}
 
 #papers ul {
   list-style: none;
@@ -20,7 +23,6 @@ body {
 }
 
 #papers ul li {
-  list-style: none;
   padding-top: 8px;
   padding-bottom: 8px;
 } 
