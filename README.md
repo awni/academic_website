@@ -8,7 +8,7 @@ Or using a server:
 python -m http.server
 ```
 
-### Deply to s3
+### Deploy to s3
 
 Make sure the aws CLI is
 [installed](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux-mac.html)

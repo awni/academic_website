@@ -3,7 +3,8 @@
 if [ -z $1 ]
 then
     echo "Uploading full site";
-    for dir in "assets" "papers" "research" "writing" "tutorials"
+    # uncomment to also upload pdfs
+    for dir in "assets" "research" # "writing" "tutorials" "papers" "talks"
     do
         aws2 s3 cp --recursive $dir s3://awnihannun.com/$dir
     done
