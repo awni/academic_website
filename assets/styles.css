@@ -16,13 +16,13 @@ body {
     padding-bottom: 8px;
 }
 
-#papers ul {
+.papers ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#papers ul li {
+.papers ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 } 
