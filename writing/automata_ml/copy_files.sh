@@ -17,7 +17,7 @@ cd ${REPO}
 
 # Make individual notebook archives:
 for nb in 'acceptors_and_transducers' 'basic_operations' 'advanced_operations' \
-          'differentiable_automata' 'extended_examples'
+          'differentiation_with_automata' 'extended_examples'
 do
     zip ${nb}.zip notebooks/${nb}.ipynb notebooks/README.md notebooks/*.py
     for fig in `grep -o 'figures/.*.svg' notebooks/${nb}.html`
