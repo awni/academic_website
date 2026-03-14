@@ -18,7 +18,7 @@ and
 Get the upload script:
 
 ```
-curl -O https://gist.githubusercontent.com/awni/e159b35f3313a4428a7a27d2b68d009b/raw/1fff5fdd12b7441cfc2f57ae9e3440fbae4d66b5/upload.sh
+curl -O https://gist.githubusercontent.com/awni/e159b35f3313a4428a7a27d2b68d009b/raw/c64d61d3b48bbae431086da3e25f0e2ad4ef09e6/upload.sh
 ```
 
 Upload the full site with
